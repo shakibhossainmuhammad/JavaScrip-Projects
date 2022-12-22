@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR PICKER</title>
+</head>
+
+<body>
+    <h1 id="sk">SK</h1>
+    <input type="text" name="" id="hexaNumber">
+    <br><br>
+    <input type="color" name="" id="color">
+
+    <script>
+        var hexaNumber = document.getElementById('hexaNumber')
+        var color = document.getElementById('color')
+        color.addEventListener('input', function () {
+            var InputColor = color.value;
+            hexaNumber.value = InputColor;
+            document.getElementById('sk').style.color = InputColor;
+            document.body.style.backgroundColor = InputColor;
+
+        })
+    </script>
+</body>
+
+</html>
